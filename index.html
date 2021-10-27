@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 30%;
+            margin: auto;
+            padding: 30px 40px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .product-img-container {
+            width: 80%;
+            margin: auto;
+            position: relative;
+        }
+
+        .product-img-container img {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            transition: .5s ease;
+        }
+
+        .product-view-btn {
+            color: tomato;
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            padding: 20px;
+        }
+
+        .product-img-container:hover img {
+            opacity: 0.3;
+        }
+
+        .product-img-container:hover .product-view-btn {
+            opacity: 1;
+        }
+
+
+        .product-heading {
+            font-size: 24pt;
+            font-weight: bolder;
+        }
+
+        .product-mrp {
+            color: black;
+            font-size: 18pt;
+        }
+
+        .product-brand {
+            color: black;
+            display: block;
+        }
+
+        .product-stars {
+            color: rgb(255, 123, 0);
+        }
+
+        .product-ratings {
+            color: black;
+            display: block;
+        }
+
+        .heart {
+            color: red;
+        }
+
+        .share {
+            color: black;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="card">
+        <div class="product-img-container">
+            <img src="img_avatar2.png" alt="Avatar">
+            <i class="fa fa-eye product-view-btn" aria-hidden="true"></i>
+
+        </div>
+        <div class="container">
+            <span class="product-heading">Echo Dot Smart Speaker</span>
+            <spna class="product-mrp">M.R.P.: 3,249.00</span>
+                <span class="product-brand">Brand : Amazon</span>
+                <span class="product-stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+                <span class="product-ratings"> 292 ratings</span>
+                <i style="font-size:24px; " class="fa heart">&#xf004;</i>
+                <i style="font-size:24px" class="fa share">&#xf1e0;</i>
+        </div>
+    </div>
+</body>
+
+</html>
